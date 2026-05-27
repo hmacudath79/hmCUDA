@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: GPL-2.0-only
+# Common headers are synced into this directory by sync_to_share.sh
+ccflags-y := -I$(src)
+
+obj-m += virtio_hmcuda.o
+virtio_hmcuda-objs := virtio_hmcuda_main.o cmd_runtime.o cmd_driver.o
